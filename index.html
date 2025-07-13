@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva - Nutrición</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Malla Interactiva - Licenciatura en Nutrición</h1>
+  <p>Haz clic para marcar materias como aprobadas.</p>
+  <div class="malla">
+
+    <!-- Año 1 -->
+    <div class="bloque year-1">
+      <h2>1° Año</h2>
+      <div class="cuatri">
+        <h3>1° Cuatrimestre</h3>
+        <div class="materia" data-id="biologia" data-correlativas="">Biología General</div>
+        <div class="materia" data-id="anatomia" data-correlativas="">Anatomía e Histología</div>
+        <div class="materia" data-id="bioquimica1" data-correlativas="">Bioquímica I</div>
+        <div class="materia" data-id="cultura" data-correlativas="">Cultura de la Alimentación</div>
+        <div class="materia" data-id="salud" data-correlativas="">Salud Pública</div>
+      </div>
+      <div class="cuatri">
+        <h3>2° Cuatrimestre</h3>
+        <div class="materia" data-id="nutricion1" data-correlativas="">Nutrición I</div>
+        <div class="materia" data-id="psicoalimentacion" data-correlativas="">Psicología de la Alimentación</div>
+        <div class="materia" data-id="comunicacion" data-correlativas="">Comunicación de la Nutrición</div>
+        <div class="materia" data-id="economia" data-correlativas="">Economía y Producción Alimentaria</div>
+        <div class="materia" data-id="procesamiento" data-correlativas="">Procesamiento de Datos en Salud</div>
+      </div>
+    </div>
+
+    <!-- Año 2 -->
+    <div class="bloque year-2">
+      <h2>2° Año</h2>
+      <div class="cuatri">
+        <h3>1° Cuatrimestre</h3>
+        <div class="materia" data-id="fisiologia" data-correlativas="biologia,anatomia">Fisiología General</div>
+        <div class="materia" data-id="bromatologia" data-correlativas="bioquimica1">Bromatología</div>
+        <div class="materia" data-id="microbiologia" data-correlativas="biologia">Microbiología</div>
+        <div class="materia" data-id="bioquimica2" data-correlativas="bioquimica1">Bioquímica II</div>
+        <div class="materia" data-id="tecnicadietetica1" data-correlativas="bioquimica1">Técnica Dietética I</div>
+      </div>
+      <div class="cuatri">
+        <h3>2° Cuatrimestre</h3>
+        <div class="materia" data-id="nutricion2" data-correlativas="nutricion1">Nutrición II</div>
+        <div class="materia" data-id="fisiologiadig" data-correlativas="biologia,anatomia">Fisiología Digestiva</div>
+        <div class="materia" data-id="nutricioninfantil" data-correlativas="nutricion1">Nutrición Infantil</div>
+        <div class="materia" data-id="evaluacion" data-correlativas="nutricion1">Evaluación Nutricional</div>
+        <div class="materia" data-id="politicas" data-correlativas="salud">Políticas Alimentarias</div>
+      </div>
+    </div>
+
+    <!-- Año 3 -->
+    <div class="bloque year-3">
+      <h2>3° Año</h2>
+      <div class="cuatri">
+        <h3>1° Cuatrimestre</h3>
+        <div class="materia" data-id="fisiopato" data-correlativas="fisiologia">Fisiopatología General</div>
+        <div class="materia" data-id="tecnicadietetica2" data-correlativas="tecnicadietetica1">Técnica Dietética II</div>
+        <div class="materia" data-id="servicios" data-correlativas="">Gestión de Servicios Alimentarios</div>
+        <div class="materia" data-id="marketing" data-correlativas="">Marketing en Nutrición</div>
+        <div class="materia" data-id="legislacion" data-correlativas="">Legislación Alimentaria</div>
+      </div>
+      <div class="cuatri">
+        <h3>2° Cuatrimestre</h3>
+        <div class="materia" data-id="fisiopatoendo" data-correlativas="fisiopato">Fisiopatología Endócrino‑Digestiva</div>
+        <div class="materia" data-id="educacion" data-correlativas="bromatologia">Educación Alimentaria</div>
+        <div class="materia" data-id="nutriciondeporte" data-correlativas="evaluacion">Nutrición & Deporte</div>
+        <div class="materia" data-id="investigacion" data-correlativas="bromatologia">Investigación en Salud</div>
+        <div class="materia" data-id="emprende" data-correlativas="procesamiento">Emprendedurismo</div>
+      </div>
+    </div>
+
+    <!-- Año 4 -->
+    <div class="bloque year-4">
+      <h2>4° Año</h2>
+      <div class="cuatri">
+        <h3>1° Cuatrimestre</h3>
+        <div class="materia" data-id="optativa1" data-correlativas="">Optativa I</div>
+        <div class="materia" data-id="fisiopatoinfantil" data-correlativas="nutricioninfantil">Fisiopatología Infantil</div>
+        <div class="materia" data-id="tecnicadietoterapica1" data-correlativas="bioquimica2">Técnica Dietoterápica I</div>
+        <div class="materia" data-id="terapeutica" data-correlativas="fisiopato">Terapéutica General</div>
+        <div class="materia" data-id="ingles" data-correlativas="">Inglés</div>
+      </div>
+      <div class="cuatri">
+        <h3>2° Cuatrimestre</h3>
+        <div class="materia" data-id="optativa2" data-correlativas="">Optativa II</div>
+        <div class="materia" data-id="tecnicadietoterapica2" data-correlativas="tecnicadietoterapica1">Técnica Dietoterápica II</div>
+        <div class="materia" data-id="endocrino" data-correlativas="fisiopatoendo">Terapéutica Endócrino‑Digestiva</div>
+        <div class="materia" data-id="farmacologia" data-correlativas="fisiopatoendo">Farmacología & Suplementación</div>
+        <div class="materia" data-id="tfi" data-correlativas="nutriciondeporte,educacion,fisiopatoendo">Trabajo Final Integrador</div>
+      </div>
+    </div>
+
+    <!-- Año 5 -->
+    <div class="bloque year-5">
+      <h2>5° Año</h2>
+      <div class="cuatri">
+        <h3>Prácticas</h3>
+        <div class="materia" data-id="pps1" data-correlativas="">PPS I</div>
+        <div class="materia" data-id="pps2" data-correlativas="">PPS II</div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
